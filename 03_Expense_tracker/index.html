@@ -11,17 +11,35 @@
       <h1>Saving is fun!</h1>
       <div class="budget-amount-container">
         <form class="budget-form">
+          <div>
+            <input
+              type="text"
+              placeholder="Enter Budget Amount"
+              class="budget-input"
+            />
+            <button class="submit">Submit</button>
+          </div>
+          <div class="budget-display-container">
+            <h2 class="budget-display"></h2>
+          </div>
+        </form>
+        <div>
+          <label>Expenses category</label>
           <input
             type="text"
-            placeholder="Enter Budget Amount"
-            class="budget-input"
+            placeholder="enter the category"
+            class="budget-category"
           />
-          <button class="submit">Submit</button>
-        </form>
+          <label>Spent Amount</label>
+          <input
+            type="text"
+            placeholder="enter the amount"
+            class="budget-amount"
+          />
+          <button onclick="addCategory(budgetVal)">Add</button>
+        </div>
       </div>
-      <div class="budget-display-container">
-        <h2 class="budget-display"></h2>
-      </div>
+
       <div class="budget-list">
         <table class="cinereousTable">
           <thead>
@@ -32,12 +50,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <!-- <tr>
               <td>Shopping</td>
               <td>200</td>
               <td>0</td>
               <td class="delete-btn"><button>Delete</button></td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
       </div>

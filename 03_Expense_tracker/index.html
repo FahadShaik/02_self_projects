@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expense calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Saving is fun!</h1>
+      <div class="budget-amount-container">
+        <form class="budget-form">
+          <input
+            type="text"
+            placeholder="Enter Budget Amount"
+            class="budget-input"
+          />
+          <button class="submit">Submit</button>
+        </form>
+      </div>
+      <div class="budget-display-container">
+        <h2 class="budget-display"></h2>
+      </div>
+      <div class="budget-list">
+        <table class="cinereousTable">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Spent</th>
+              <th>Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Shopping</td>
+              <td>200</td>
+              <td>0</td>
+              <td class="delete-btn"><button>Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

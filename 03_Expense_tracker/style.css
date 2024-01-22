@@ -1,50 +1,111 @@
-* {
-    padding: 0;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
-    font-size: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-table.cinereousTable {
-    border: 6px solid #948473;
-    background-color: #FFE3C6;
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.budget-amount-container {
+    margin-top: 20px;
+}
+
+.budget-form {
+    margin-bottom: 20px;
+}
+
+.budget-input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit,
+.add-button {
     width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.budget-display-container {
     text-align: center;
 }
 
-table.cinereousTable td,
-table.cinereousTable th {
-    border: 1px solid #948473;
-    padding: 4px 4px;
-}
-
-table.cinereousTable tbody td {
-    font-size: 13px;
-}
-
-table.cinereousTable thead {
-    background: #948473;
-    background: -moz-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
-    background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
-    background: linear-gradient(to bottom, #afa396 0%, #9e9081 66%, #948473 100%);
-}
-
-table.cinereousTable thead th {
-    font-size: 17px;
-    font-weight: bold;
-    color: #F0F0F0;
-    text-align: left;
-    border-left: 2px solid #948473;
-}
-
-table.cinereousTable thead th:first-child {
-    border-left: none;
-}
-
-table.cinereousTable tfoot td {
-    font-size: 16px;
+.budget-display {
+    color: #4CAF50;
 }
 
 .err {
     color: red;
-    font-size: 12px;
+    text-align: center;
+}
+
+.budget-category,
+.budget-amount {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.budget-list {
+    margin-top: 20px;
+}
+
+.cinereousTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cinereousTable th,
+.cinereousTable td {
+    padding: 15px;
+    text-align: center;
+    /* Center the table data */
+    border-bottom: 1px solid #ddd;
+}
+
+.cinereousTable th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.delete-btn button,
+.add-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
 }

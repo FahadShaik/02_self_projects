@@ -10,14 +10,23 @@ let budgetDisplayContainer = document.querySelector(
 let budgetVal;
 
 let tableBody = document.querySelector("tbody");
+const error = document.querySelector(".err");
 
 budgetForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   budgetVal = budgetInput.value;
-  budgetDisplayText.innerHTML = budgetVal + " Rs";
-  budgetDisplayContainer.appendChild(budgetDisplayText);
-  budgetInput.value = "";
+  if (budgetVal.trim() !== "") {
+    budgetDisplayText.innerHTML = budgetVal + " Rs";
+    budgetDisplayContainer.appendChild(budgetDisplayText);
+    budgetInput.value = "";
+    budgetDisplayContainer.style.display = "block";
+    error.style.display = "none";
+  } else {
+    budgetDisplayContainer.style.display = "none";
+    error.innerHTML = "enter the amount";
+    error.style.display = "block";
+  }
 });
 
 function addCategory(budgetAmount) {

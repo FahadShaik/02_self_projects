@@ -28,25 +28,4 @@ function submitHandler(e) {
   validationHandler(inputName, errMsgOne, "name");
   validationHandler(inputEmail, errMsgTwo, "email");
   validationHandler(inputPassword, errMsgThree, "password");
-
-  /* if (inputEmail.value.trim() === "") {
-    errMsgTwo.innerHTML = "Enter the Email";
-    errMsgTwo.style.color = "red";
-    errMsgTwo.style.display = "block";
-    inputEmail.style.borderColor = "red";
-  } else {
-    errMsgTwo.style.display = "none";
-    inputEmail.value = "";
-    inputEmail.style.borderColor = "green";
-  }
-  if (inputPassword.value.trim() === "") {
-    errMsgThree.innerHTML = "Enter the Password";
-    errMsgThree.style.color = "red";
-    errMsgThree.style.display = "block";
-    inputPassword.style.borderColor = "red";
-  } else {
-    errMsgThree.style.display = "none";
-    inputPassword.value = "";
-    inputPassword.style.borderColor = "green";
-  } */
 }

@@ -1,0 +1,29 @@
+.container {
+    width: 500px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form,
+div {
+    flex-direction: column;
+    display: flex;
+}
+
+input {
+    padding: 6px;
+    border: 1px solid gray;
+    border-radius: 12px;
+}
+
+span {
+    font-size: 12px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+}

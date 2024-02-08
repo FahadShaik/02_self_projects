@@ -1,0 +1,13 @@
+/* styles.css */
+.digital-clock {
+    font-size: 3em;
+    display: inline-block;
+}
+
+.am-pm {
+    font-size: 0.5em;
+}
+
+.container {
+    text-align: center;
+}
